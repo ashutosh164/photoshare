@@ -1,4 +1,4 @@
-from django.shortcuts import render,redirect
+from django.shortcuts import render, redirect
 from .models import *
 # Create your views here.
 
@@ -14,8 +14,8 @@ def gallery(request):
     categories = Category.objects.all()
 
     context = {
-        'categories':categories,
-        'photos':photos,
+        'categories': categories,
+        'photos': photos,
     }
     return render(request,'gallery.html',context)
 

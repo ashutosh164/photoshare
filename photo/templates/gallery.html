@@ -33,7 +33,6 @@
             <div class="col-md-9">
                 <div class="row">
                     {% for photo in photos %}
-
                     <div class="col-md-4">
                         <div class="card my-2">
                             <img src="{{ photo.image.url }}" class="image-thumbail" alt="Photos not found">
@@ -43,9 +42,7 @@
                             <a href="{% url 'photo' photo.id  %}" class="btn btn-outline-info btn-sm m-1">View</a>
                         </div>
                     </div>
-
                     {% endfor %}
-
                 </div>
             </div>
         </div>
